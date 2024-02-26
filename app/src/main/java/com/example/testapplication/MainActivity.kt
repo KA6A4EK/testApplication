@@ -9,7 +9,6 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.testapplication.data.ContextModule
 import com.example.testapplication.data.DaggerAppComponent
-import com.example.testapplication.data.network
 import com.example.testapplication.ui.screens.mainScreen
 import com.example.testapplication.ui.theme.TestApplicationTheme
 

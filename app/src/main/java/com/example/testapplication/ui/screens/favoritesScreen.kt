@@ -8,7 +8,6 @@ import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.example.testapplication.data.Product
 import com.example.testapplication.data.ProductLocaleData
 import com.example.testapplication.data.ProductViewEvent
 import com.example.testapplication.data.ProductViewModel

@@ -36,24 +36,32 @@ class ProductViewModel @Inject constructor(
             }
         }
     }
-    fun saveUserLogin(string: String){
-        val s =string.split(" ")
+
+    fun saveUserLogin(string: String) {
+        val s = string.split(" ")
         sharedPrefs.edit().apply {
-            putString("firstName",s[0])
-            putString("middleName",s[1])
-            putString("phoneNumber",s[2])
+            putString("firstName", s[0])
+            putString("middleName", s[1])
+            putString("phoneNumber", s[2])
         }
             .apply()
     }
-    fun userExit(){
+
+    fun userExit() {
         sharedPrefs.edit().apply {
-            putString("firstName","")
-            putString("middleName","")
-            putString("phoneNumber","")
+            putString("firstName", "")
+            putString("middleName", "")
+            putString("phoneNumber", "")
         }
             .apply()
     }
-    fun getLogIn() ="${sharedPrefs.getString("firstName","")} ${sharedPrefs.getString("middleName","")} ${sharedPrefs.getString("phoneNumber","")}"
+
+    fun getLogIn() = "${sharedPrefs.getString("firstName", "")} ${
+        sharedPrefs.getString(
+            "middleName",
+            ""
+        )
+    } ${sharedPrefs.getString("phoneNumber", "")}"
 
 }
 

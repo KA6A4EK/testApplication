@@ -3,7 +3,6 @@ package com.example.testapplication.ui.screens
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,7 +15,6 @@ import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -29,12 +27,9 @@ import com.example.testapplication.data.ProductViewModel
 import com.example.testapplication.ui.theme.buttonText2
 import com.example.testapplication.ui.theme.caption1
 import com.example.testapplication.ui.theme.gray
-import com.example.testapplication.ui.theme.lightGray
 import com.example.testapplication.ui.theme.orange
 import com.example.testapplication.ui.theme.pink
-import com.example.testapplication.ui.theme.title1
 import com.example.testapplication.ui.theme.title2
-import com.example.testapplication.ui.theme.title4
 
 @Composable
 fun PersonalScreen(
